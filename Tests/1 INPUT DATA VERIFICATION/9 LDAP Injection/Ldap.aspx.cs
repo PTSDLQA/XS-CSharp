@@ -14,6 +14,7 @@ namespace Mopas.Tests
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+			Console.Write("Tests");
             // TODO this todo was here for ages
             var dc = new DirectoryContext(DirectoryContextType.Domain, "ptsecurity.ru");
 

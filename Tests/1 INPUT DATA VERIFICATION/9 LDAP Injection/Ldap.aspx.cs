@@ -23,7 +23,7 @@ namespace Mopas.Tests
             var domain = Domain.GetDomain(dc);
 
             // this is our vulnerabilitiy of LDAP injection *in this file*
-            var ds = new DirectorySearcher(domain.GetDirectoryEntry(), filter);
+            var ds = new DirectorySearcher(domain.GetDirectoryEntry());
 
             // TODO: AI issue #1, High, LDAP Injection, https://github.com/PTSDLQA/XS-CSharp/issues/1
             // GET /Tests/1%20INPUT%20DATA%20VERIFICATION/9%20LDAP%20Injection/Ldap.aspx?address=* HTTP/1.1

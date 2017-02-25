@@ -24,7 +24,7 @@ namespace Mopas.Tests
 			
 
             // this is our vulnerabilitiy of LDAP injection *in this file*
-            var ds = new DirectorySearcher(domain.GetDirectoryEntry(), filter);
+            var ds = new DirectorySearcher(domain.GetDirectoryEntry());//, filter);
 
             using (var src = ds.FindAll())
             {

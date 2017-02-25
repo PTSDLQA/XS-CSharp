@@ -42,7 +42,7 @@ namespace Mopas.Tests
 
             // this is our second vulnerability of XSS in this file
             // we will demonstrate what happen if developer fails with his fix (VERIFY Marker)
-            Response.Write(name);
+            //Response.Write(name);
 
             // this is our third vulnerability of XSS in this file
             // we will demonstrate what happen if we really fix vulnerability (VERIFY Marker)

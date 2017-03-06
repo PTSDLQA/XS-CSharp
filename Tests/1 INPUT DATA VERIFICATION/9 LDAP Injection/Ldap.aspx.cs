@@ -10,6 +10,7 @@ namespace Mopas.Tests
     /// MOPAS
     /// Contains 1 vulnerability
     /// </summary>
+    ///
     public partial class Ldap : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)

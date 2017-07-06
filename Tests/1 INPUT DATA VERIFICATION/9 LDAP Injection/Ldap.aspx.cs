@@ -39,26 +39,18 @@ namespace Mopas.Tests
 
             // this is our first vulnerability of XSS in this file
             // we will demonstrate False Positive scenario here (FP Marker)
-            // TODO: AI issue #, High, Cross-site Scripting,
-            // (Mopas.Tests.Ldap.Request.Params["name"] == "<script>alert(1)</script>")
             Response.Write(name);
 
             // this is our second vulnerability of XSS in this file
             // we will demonstrate what happen if developer fails with his fix (VERIFY Marker)
-            // TODO: AI issue #, High, Cross-site Scripting,
-            // (Mopas.Tests.Ldap.Request.Params["name"] == "<script>alert(1)</script>")
             Response.Write(name);
 
             // this is our third vulnerability of XSS in this file
             // we will demonstrate what happen if we really fix vulnerability (VERIFY Marker)
-            // TODO: AI issue #, High, Cross-site Scripting,
-            // (Mopas.Tests.Ldap.Request.Params["name"] == "<script>alert(1)</script>")
             Response.Write(name);
 
             // this is our fourth vulnerability of XSS in this file
             // we will demonstrate what happen if developer want to cheat (FIXED Marker)
-            // TODO: AI issue #, High, Cross-site Scripting,
-            // (Mopas.Tests.Ldap.Request.Params["name"] == "<script>alert(1)</script>")
             Response.Write(name);
         }
     }

@@ -39,28 +39,28 @@ namespace Mopas.Tests
 
             // this is our first vulnerability of XSS in this file
             // we will demonstrate False Positive scenario here (FP Marker)
-            // FP: AI issue #137, Medium, XSS, http://omachalov.ptsecurity.ru/#/taskResults/122
+            // FP: AI issue #145, Medium, XSS, http://omachalov.ptsecurity.ru/#/taskResults/130
             // GET /Tests/1%20INPUT%20DATA%20VERIFICATION/9%20LDAP%20Injection/Ldap.aspx.cs?name=%3cscript%3ealert(1)%3c%2fscript%3e HTTP/1.1
             // Host: localhost
             Response.Write(name);
 
             // this is our second vulnerability of XSS in this file
             // we will demonstrate what happen if developer fails with his fix (VERIFY Marker)
-            // FP: AI issue #138, Medium, XSS, http://omachalov.ptsecurity.ru/#/taskResults/123
+            // FP: AI issue #146, Medium, XSS, http://omachalov.ptsecurity.ru/#/taskResults/131
             // GET /Tests/1%20INPUT%20DATA%20VERIFICATION/9%20LDAP%20Injection/Ldap.aspx.cs?name=%3cscript%3ealert(1)%3c%2fscript%3e HTTP/1.1
             // Host: localhost
             Response.Write(name);
 
             // this is our third vulnerability of XSS in this file
             // we will demonstrate what happen if we really fix vulnerability (VERIFY Marker)
-            // FP: AI issue #139, Medium, XSS, http://omachalov.ptsecurity.ru/#/taskResults/124
+            // FP: AI issue #147, Medium, XSS, http://omachalov.ptsecurity.ru/#/taskResults/132
             // GET /Tests/1%20INPUT%20DATA%20VERIFICATION/9%20LDAP%20Injection/Ldap.aspx.cs?name=%3cscript%3ealert(1)%3c%2fscript%3e HTTP/1.1
             // Host: localhost
             Response.Write(name);
 
             // this is our fourth vulnerability of XSS in this file
             // we will demonstrate what happen if developer want to cheat (FIXED Marker)
-            // FP: AI issue #140, Medium, XSS, http://omachalov.ptsecurity.ru/#/taskResults/125
+            // FP: AI issue #148, Medium, XSS, http://omachalov.ptsecurity.ru/#/taskResults/133
             // GET /Tests/1%20INPUT%20DATA%20VERIFICATION/9%20LDAP%20Injection/Ldap.aspx.cs?name=%3cscript%3ealert(1)%3c%2fscript%3e HTTP/1.1
             // Host: localhost
             Response.Write(name);

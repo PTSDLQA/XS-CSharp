@@ -10,7 +10,6 @@ namespace Mopas.Tests
     /// MOPAS
     /// Contains 1 vulnerability
     /// </summary>
-    ///
     public partial class Ldap : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
@@ -25,7 +24,7 @@ namespace Mopas.Tests
 			
 
             // this is our vulnerabilitiy of LDAP injection *in this file*
-            var ds = new DirectorySearcher(domain.GetDirectoryEntry(), filter);//, filter);
+            var ds = new DirectorySearcher(domain.GetDirectoryEntry(), filter);
 
             using (var src = ds.FindAll())
             {

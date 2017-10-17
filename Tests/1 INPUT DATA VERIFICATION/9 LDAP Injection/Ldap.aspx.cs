@@ -23,7 +23,7 @@ namespace Mopas.Tests
             var domain = Domain.GetDomain(dc);
 			
 
-            // this is our vulnerabilitiy of LDAP injection *in this file*
+            // this is our vulnerabilitiy of LDAP injection *in this file* 
             var ds = new DirectorySearcher(domain.GetDirectoryEntry(), filter);
 
             using (var src = ds.FindAll())
